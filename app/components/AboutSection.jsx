@@ -20,7 +20,7 @@ const AboutSection = () => {
                                                         <div className="about-numbers-inner">
                                                                      <div className="number-moja">
                                                                                   <div className="icon">
-                                                                                            <Image src={'/collaboration.png'} sizes="100vw" fill style={{objectFit: 'cover'}} alt="hero-image"/>
+                                                                                            <Image src={'/collaboration.png'} sizes="100vw" fill  alt="hero-image"/>
                                                                                   </div>
                                                                                   <div className="number-moja-texts">
                                                                                              <h1 className={figtree.className}><CountUp end={15} enableScrollSpy={true} scrollSpyOnce={true} /></h1>
@@ -29,7 +29,7 @@ const AboutSection = () => {
                                                                      </div>
                                                                      <div className="number-moja">
                                                                                   <div className="icon">
-                                                                                            <Image src={'/atom.png'} sizes="100vw" fill style={{objectFit: 'cover'}} alt="hero-image"/>
+                                                                                            <Image src={'/atom.png'} sizes="100vw" fill  alt="hero-image"/>
                                                                                   </div>
                                                                                   <div className="number-moja-texts">
                                                                                              <h1 className={figtree.className}><CountUp end={200} enableScrollSpy={true} scrollSpyOnce={true} /></h1>
@@ -38,7 +38,7 @@ const AboutSection = () => {
                                                                      </div>
                                                                      <div className="number-moja">
                                                                                   <div className="icon">
-                                                                                            <Image src={'/earth.png'} sizes="100vw" fill style={{objectFit: 'cover'}} alt="hero-image"/>
+                                                                                            <Image src={'/earth.png'} sizes="100vw" fill  alt="hero-image"/>
                                                                                   </div>
                                                                                   <div className="number-moja-texts">
                                                                                              <h1 className={figtree.className}><CountUp end={50} enableScrollSpy={true} scrollSpyOnce={true} /></h1>
@@ -50,7 +50,7 @@ const AboutSection = () => {
                                 </div>
                                 <div className="about-content-col">
                                           <div className="about-content-image"> 
-                                                     <Image src={'/about1.jpg'} sizes="100vw" fill style={{objectFit: 'cover'}} alt="hero-image"/>
+                                                     <Image src={'/about1.jpg'} sizes="100vw" fill  alt="hero-image"/>
                                           </div>
                                 </div>
                     </div>

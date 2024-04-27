@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import Navbar from "./components/navigation/Navbar";
 import Solutions from "./components/Solutions";
+import CaseStudies from "./components/CaseStudies";
 export default function Home() {
   return (
     <main>
@@ -12,6 +13,7 @@ export default function Home() {
              <HeroSection />
              <AboutSection />
              <Solutions />
+             <CaseStudies />
     </main>
   );
 }

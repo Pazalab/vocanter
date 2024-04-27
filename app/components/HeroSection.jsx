@@ -26,7 +26,7 @@ const HeroSection = () => {
                                      <div className="hero-intro">
                                                  <div className="intro-statement">
                                                           <h3>Boutique Software Consulting</h3>
-                                                         <h1>Empowering Businesses & Organizations with Powerful Web Solutions.</h1>
+                                                         <h1>Empowering Businesses & Organizations with Powerful Tech Solutions.</h1>
                                                  </div>
                                                 <div className="intro-explore">
                                                           <p>Explore <span></span></p>
@@ -35,7 +35,7 @@ const HeroSection = () => {
                                      </div> 
                                      <div className="hero-base">
                                                 <div className="hero-image">
-                                                            <Image src={'/hero1.jpg'} sizes="100vw" fill style={{objectFit: 'cover'}} alt="hero-image"/>
+                                                            <Image src={'/hero1.jpg'} sizes="100vw" fill alt="hero-image"/>
                                                 </div>
                                                 <div className="hero-shine">
                                                          <div className="hero-shine-header">
@@ -48,7 +48,7 @@ const HeroSection = () => {
                                                          </div>
                                                 </div>
                                                 <div className="hero-solutions">
-                                                           <Image src={'/hero2.jpg'} sizes="100vw" fill style={{objectFit: 'cover'}} alt="hero-image"/>
+                                                           <Image src={'/hero2.jpg'} sizes="100vw" fill  alt="hero-image"/>
                                                            <div className="hero-solutions-texts">
                                                                       <p>Mobile Application Development</p>
                                                                       <p>Drupal Migrations</p>
