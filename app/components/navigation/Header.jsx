@@ -3,7 +3,10 @@
 import Image from "next/image";
 import { CgMenuRight } from "react-icons/cg";
 import { Link } from "react-scroll";
+import ContactBar from "./ContactBar";
+import { useState } from "react";
 const Header = () => {
+  const [active, setActive] = useState(false);
   return (
     <div className="header">
               <div className="inner-row">
@@ -16,14 +19,15 @@ const Header = () => {
                                                 <li><Link to="hero" offset={-100} smooth={true} activeClass="active" spy={true}>Home</Link></li>
                                                 <li><Link to='about' activeClass="active" smooth={true} spy={true}>About</Link></li>
                                                 <li><Link to='solutions' activeClass="active" smooth={true} spy={true}>Solutions</Link></li>
-                                                <li><Link to='case-studies' activeClass="active">Case Studies</Link></li>
-                                                <li><Link to='contact' activeClass="active">Contact Us</Link></li>
+                                                <li><Link to='case-studies' activeClass="active"  smooth={true} spy={true}>Case Studies</Link></li>
+                                                <li><Link to='contact' activeClass="active"  smooth={true} spy={true}>Contact Us</Link></li>
                                        </ul>
                                        <div className=""></div>
-                                       <div className="scafold-menu-btn">
+                                       <div className="scafold-menu-btn" onClick={() => setActive(true)}>
                                                   <span><CgMenuRight /></span>
                                        </div>
                            </div>
+                           <ContactBar  status={active} active func = {setActive} />
               </div>
     </div>
   )
