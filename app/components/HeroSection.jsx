@@ -5,6 +5,7 @@ import Image from "next/image";
 import { GoArrowDown } from "react-icons/go";
 import { figtree } from "../layout";
 import { useEffect, useRef } from "react";
+import { Link } from "react-scroll";
 const HeroSection = () => {
    const scrollerRef = useRef();
 
@@ -28,14 +29,14 @@ const HeroSection = () => {
                                                           <h3>Boutique Software Consulting</h3>
                                                          <h1>Empowering Businesses & Organizations with Powerful Tech Solutions.</h1>
                                                  </div>
-                                                <div className="intro-explore">
+                                                <Link to='about' smooth={true} className="intro-explore">
                                                           <p>Explore <span></span></p>
                                                           <span className="bounce"><LiaLongArrowAltDownSolid /></span>
-                                                </div>             
+                                                </Link>             
                                      </div> 
                                      <div className="hero-base">
                                                 <div className="hero-image">
-                                                            <Image src={'/hero1.jpg'} sizes="100vw" fill alt="hero-image"/>
+                                                            <Image src={'/hero1.jpg'} sizes="100vw" style={{ objectFit: "cover"}} fill alt="hero-image"/>
                                                 </div>
                                                 <div className="hero-shine">
                                                          <div className="hero-shine-header">
@@ -44,16 +45,16 @@ const HeroSection = () => {
 
                                                          <div className="hero-shine-texts">
                                                                    <p>We engineer your online success, from strategy to maintenance, with solutions that scale.</p>
-                                                                   <a href="">Read More <span><GoArrowDown /></span></a>
+                                                                   <Link to='about' smooth={true}>Read More <span><GoArrowDown /></span></Link>
                                                          </div>
                                                 </div>
                                                 <div className="hero-solutions">
-                                                           <Image src={'/hero2.jpg'} sizes="100vw" fill  alt="hero-image"/>
+                                                           <Image src={'/hero2.jpg'} sizes="100vw" style={{objectFit: "cover"}} fill  alt="hero-image"/>
                                                            <div className="hero-solutions-texts">
                                                                       <p>Mobile Application Development</p>
                                                                       <p>Drupal Migrations</p>
                                                                       <p>Systems Architectural Design</p>
-                                                                      <a href="">View more Solutions</a>
+                                                                      <Link to='solutions'  smooth={true}>View more Solutions</Link>
                                                            </div>
                                                 </div>
                                      </div>

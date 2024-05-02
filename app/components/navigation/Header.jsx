@@ -4,9 +4,13 @@ import Image from "next/image";
 import { CgMenuRight } from "react-icons/cg";
 import { Link } from "react-scroll";
 import ContactBar from "./ContactBar";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { sidebarContext } from "./context";
 const Header = () => {
   const [active, setActive] = useState(false);
+  const [sidebarStatus, setSidebarStatus] = useContext(sidebarContext);
+  const openSidebar = () => setSidebarStatus(true);
+
   return (
     <div className="header">
               <div className="inner-row">
@@ -26,8 +30,12 @@ const Header = () => {
                                        <div className="scafold-menu-btn" onClick={() => setActive(true)}>
                                                   <span><CgMenuRight /></span>
                                        </div>
+
+                                       <div className="sidebar-btn" onClick={openSidebar}>
+                                                <span><CgMenuRight /></span>
+                                       </div>
                            </div>
-                           <ContactBar  status={active} active func = {setActive} />
+                           <ContactBar  status={active} func = {setActive} />
               </div>
     </div>
   )

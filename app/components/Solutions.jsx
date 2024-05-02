@@ -21,12 +21,12 @@ const Solutions = () => {
                                                                  <p>We specialize in designing and developing custom mobile applications tailored to the unique needs of our clients. From concept to deployment, we ensure that your mobile solution is innovative, user-friendly, and fully licensed for commercial use.</p>
                                                        </div>
                                                        <div className="solution-moja-image">
-                                                                 <Image src={'/mobile-app.jpg'} sizes="100vw" fill alt="" />
+                                                                 <Image src={'/mobile-app.jpg'} sizes="100vw" style={{objectFit: "cover"}} fill alt="" />
                                                        </div>
                                             </div>
                                             <div className="solution-moja">
-                                                      <div className="solution-moja-image">
-                                                                 <Image src={'/remote.jpg'} sizes="100vw" fill alt="" />
+                                                      <div className="solution-moja-image"> 
+                                                                 <Image src={'/remote.jpg'} sizes="100vw" style={{objectFit: "cover"}} fill alt="" />
                                                        </div>
                                                       <div className="solution-moja-texts">
                                                                  <h2 className={figtree.className}>Remote Application Maintenance.</h2>
@@ -39,12 +39,12 @@ const Solutions = () => {
                                                                  <p>We manage seamless data migrations, including complex transitions to Drupal platforms. Our expertise ensures that your data is transferred securely and accurately, preserving integrity and functionality throughout the process.</p>
                                                        </div>
                                                        <div className="solution-moja-image">
-                                                                 <Image src={'/migrations.jpg'} sizes="100vw" fill alt="" />
+                                                                 <Image src={'/migrations.jpg'} sizes="100vw" style={{objectFit: "cover"}} fill alt="" />
                                                        </div>
                                             </div>
                                             <div className="solution-moja">
                                                      <div className="solution-moja-image">
-                                                                 <Image src={'/customized.jpg'} sizes="100vw" fill alt="" />
+                                                                 <Image src={'/customized.jpg'} sizes="100vw" style={{objectFit: "cover"}} fill alt="" />
                                                        </div>
                                                       <div className="solution-moja-texts">
                                                                  <h2 className={figtree.className}>Customized Consulting Services.</h2>
@@ -57,12 +57,12 @@ const Solutions = () => {
                                                                  <p>We specialize in designing robust and scalable systems architectures. Whether you&apos;re planning a new application or optimizing existing infrastructure, our architects provide tailored solutions to enhance performance, reliability, and scalability..</p>
                                                        </div>
                                                        <div className="solution-moja-image">
-                                                                 <Image src={'/systems.jpg'} sizes="100vw" fill alt="" />
+                                                                 <Image src={'/systems.jpg'} sizes="100vw" style={{objectFit: "cover"}} fill alt="" />
                                                        </div>
                                             </div>
                                             <div className="solution-moja">
                                                       <div className="solution-moja-image">
-                                                                 <Image src={'/custom.jpg'} sizes="100vw" fill alt="" />
+                                                                 <Image src={'/custom.jpg'} sizes="100vw" style={{objectFit: "cover"}} fill alt="" />
                                                        </div>
                                                       <div className="solution-moja-texts">
                                                                  <h2 className={figtree.className}>Advanced Custom Projects and Systems.</h2>

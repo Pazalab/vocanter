@@ -1,7 +1,9 @@
+"use client"
 import { figtree } from "../layout"
 import { RxArrowTopRight } from "react-icons/rx";
-
+import ReCAPTCHA from "react-google-recaptcha";
 const ContactForm = () => {
+
   return (
     <div className="contact-form">
                <form action="">
@@ -30,6 +32,9 @@ const ContactForm = () => {
                                     <textarea className={figtree.className} cols="30" rows="10" placeholder="What's on your mind"></textarea>
                           </div>
 
+                          <ReCAPTCHA 
+                                  sitekey={process.env.NEXT_PUBLIC_GOOGLE_SITE_KEY}
+                           />
                           <button  className={figtree.className} type="submit">Submit Now <span><RxArrowTopRight /></span></button>
                </form>
     </div>

@@ -1,3 +1,4 @@
+import gsap from "gsap";
 import Image from "next/image"
 import { useCallback, useEffect, useRef } from "react";
 import { CgClose } from "react-icons/cg"
@@ -6,7 +7,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const ContactBar = ({ status, func }) => {
     const sideRef = useRef()
-
+    const sideWrapper = useRef();
     const handleClick = useCallback((e) => {
         if(sideRef.current && !sideRef.current.contains(e.target)){
                func(false)
@@ -17,13 +18,40 @@ const ContactBar = ({ status, func }) => {
     
     useEffect(() => {
         document.addEventListener("click", handleClick, true)
-    }, [handleClick])
+    
+         if(status){
+                sideWrapper.current.classList.add("active")
+                const tl = gsap.timeline();
+                tl.to(sideWrapper.current, {
+                        x: 0,
+                        duration: 0.5,
+                })
+                tl.to(sideWrapper.current.querySelector(".contact-bar"), {
+                       x: 0,
+                       duration: 0.5
+                })
+         }else{
+              const tl = gsap.timeline();
+              tl.to(sideWrapper.current.querySelector(".contact-bar"), {
+                    x: "100%",
+                    duration: 0.5,
+             })
+              tl.to(sideWrapper.current, {
+                     x: "100%",
+                      duration: 0.5,
+              })
+
+              setTimeout(() => {
+                    sideWrapper.current.classList.remove("active")
+              }, 1000)
+         }
+    }, [handleClick, status])
 
 
 
   return (
-          <div className={ status ? "contact-wrapper active" : "contact-wrapper"}>
-                  <div ref={sideRef} className={ status ? "contact-bar active" : "contact-bar"}>
+          <div ref={sideWrapper} className="contact-wrapper">
+                  <div ref={sideRef} className="contact-bar">
                             <span onClick={() => func(false)}><CgClose /></span>
                             <div className="contact-logo">
                                       <Image src={'/logo-white.png'} sizes="100vw" fill style={{ objectFit: "contain"}}  alt="" />
