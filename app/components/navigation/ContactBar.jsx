@@ -46,9 +46,6 @@ const ContactBar = ({ status, func }) => {
               }, 1000)
          }
     }, [handleClick, status])
-
-
-
   return (
           <div ref={sideWrapper} className="contact-wrapper">
                   <div ref={sideRef} className="contact-bar">

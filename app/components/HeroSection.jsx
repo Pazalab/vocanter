@@ -29,11 +29,12 @@ const HeroSection = () => {
                                                           <h3>Boutique Software Consulting</h3>
                                                          <h1>Empowering Businesses & Organizations with Powerful Tech Solutions.</h1>
                                                  </div>
-                                                 
+
                                                 <Link to='about' smooth={true} className="intro-explore">
                                                           <p>Explore <span></span></p>
                                                           <span className="bounce"><LiaLongArrowAltDownSolid /></span>
-                                                </Link>             
+                                                </Link>    
+                                                         
                                      </div> 
                                      <div className="hero-base">
                                                 <div className="hero-image">
