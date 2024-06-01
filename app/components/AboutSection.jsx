@@ -13,36 +13,36 @@ const AboutSection = () => {
                                                     <div className="about-intro">
                                                              <h3>About Company</h3>
                                                               <h2 className={figtree.className}>With a deep understanding of technology and a commitment to client success, we provide expert software consulting services. We empower businesses of all sizes to achieve their goals by crafting tailored solutions that leverage the latest technologies.</h2>
-                                                              <p>At Vocanter, we spark innovation through diversity.  Our team, a vibrant tapestry of minds, unites in a single purpose: to empower businesses of all sizes with groundbreaking software solutions.  We don&apos;t just write code; we leverage our collective brilliance to craft strategic tools that unlock your full potential and propel you towards extraordinary results.</p>
+                                                              <p>At Vocanter, we spark innovation through diversity.  Our team, a vibrant tapestry of minds, unites in a single purpose: to empower businesses of all sizes with groundbreaking software solutions.  We don&apos;t just write code; we leverage our collective experience to craft strategic tools that unlock your full potential and propel you towards extraordinary results.</p>
                                                   </div>
                                             </div>
                                             <div className="about-numbers">
                                                         <div className="about-numbers-inner">
                                                                      <div className="number-moja">
                                                                                   <div className="icon">
-                                                                                            <Image src={'/collaboration.png'} sizes="100vw" fill  alt="hero-image"/>
+                                                                                            <Image src={'/calendar.png'} sizes="100vw" fill  alt="hero-image"/>
                                                                                   </div>
                                                                                   <div className="number-moja-texts">
-                                                                                             <h1 className={figtree.className}><CountUp end={15} enableScrollSpy={true} scrollSpyOnce={true} /></h1>
-                                                                                             <p>Professional Experts</p>
+                                                                                             <h1 className={figtree.className}><CountUp end={19} enableScrollSpy={true} scrollSpyOnce={true} /></h1>
+                                                                                             <p>Years in Business</p>
                                                                                   </div>
                                                                      </div>
                                                                      <div className="number-moja">
                                                                                   <div className="icon">
-                                                                                            <Image src={'/atom.png'} sizes="100vw" fill  alt="hero-image"/>
+                                                                                            <Image src={'/certficate.png'} sizes="100vw" fill  alt="hero-image"/>
                                                                                   </div>
                                                                                   <div className="number-moja-texts">
-                                                                                             <h1 className={figtree.className}><CountUp end={200} enableScrollSpy={true} scrollSpyOnce={true} /></h1>
-                                                                                             <p>Projects Complete</p>
+                                                                                             <h1 className={figtree.className}><CountUp end={20} enableScrollSpy={true} scrollSpyOnce={true} />+</h1>
+                                                                                             <p>Industry Certifications</p>
                                                                                   </div>
                                                                      </div>
                                                                      <div className="number-moja">
                                                                                   <div className="icon">
-                                                                                            <Image src={'/earth.png'} sizes="100vw" fill  alt="hero-image"/>
+                                                                                            <Image src={'/folder.png'} sizes="100vw" fill  alt="hero-image"/>
                                                                                   </div>
                                                                                   <div className="number-moja-texts">
-                                                                                             <h1 className={figtree.className}><CountUp end={50} enableScrollSpy={true} scrollSpyOnce={true} /></h1>
-                                                                                             <p>Worldwide Clients</p>
+                                                                                             <h1 className={figtree.className}><CountUp end={200} enableScrollSpy={true} scrollSpyOnce={true} />+</h1>
+                                                                                             <p>Projects Completed</p>
                                                                                   </div>
                                                                      </div>
                                                         </div>

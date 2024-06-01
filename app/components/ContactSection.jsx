@@ -16,13 +16,14 @@ const ContactSection = () => {
                                                 <div className="contact-body-col">
                                                           <div className="contact-body-box">
                                                                      <h3>Give us a Call</h3>
-                                                                      <p><span><IoMdCall /></span> +254 7123 45678</p>
-                                                                      <p><span><IoMdCall /></span> +1 (33) 74893 849</p>
+                                                                      <p><span><IoMdCall /></span> +254 759 431 765</p>
+                                                                      <p><span><IoMdCall /></span> +254 793 894 475</p>
+                                                                      <p><span><IoMdCall /></span> +1 (240) 470-6402</p>
                                                           </div>
                                                           <div className="contact-body-box">
                                                                    <h3>Email us</h3>
-                                                                   <p><span><BsEnvelopeAtFill /></span>support@vocanter.com</p>
                                                                    <p><span><BsEnvelopeAtFill /></span>info@vocanter.com</p>
+                                                                   <p><span><BsEnvelopeAtFill /></span>sales@vocanter.com</p>
                                                           </div>
                                                 </div>
                                                 <div className="contact-form-col">

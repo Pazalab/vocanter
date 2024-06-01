@@ -63,7 +63,8 @@ const HeroSection = () => {
 
 
                                      <div className="hero-partners">
-                                                 <h3 className={figtree.className}> More than <span> 200+</span> Happy Clients & Partners</h3>
+                                                 {/* <h3 > More than <span> 200+</span> Happy Clients & Partners</h3> */}
+                                                 <h3 className={figtree.className}>Our expanding network of Clients and Partners</h3>
 
                                                  <div className="hero-partners-row" ref={scrollerRef}>
                                                            <div className="partners-scroller">

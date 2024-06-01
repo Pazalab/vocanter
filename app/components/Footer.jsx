@@ -36,7 +36,7 @@ const Footer = () => {
 
                         <div className="copyright">
                                    <p>All rights reserved &copy;{new Date().getFullYear()} Vocanter LLC</p>
-                                   <a href="">Privacy policy</a>
+                                   {/* <a href="">Privacy policy</a> */}
                         </div>
                 </div>
     </footer>

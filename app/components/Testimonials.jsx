@@ -10,11 +10,11 @@ const Testimonials = () => {
   const [active, setActive] = useState(0)
   const forwardClick = () => {
           setActive(prev => prev + 1);
-          if(active === 2) setActive(0)
+          if(active === 3) setActive(0)
   }
  const prevClick = () => {
         setActive(prev => prev - 1);
-        if(active === 0) setActive(2)
+        if(active === 0) setActive(3)
  }
   return (
     <div className='testimonial-section'>
