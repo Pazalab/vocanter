@@ -9,20 +9,21 @@ const Footer = () => {
     <footer>
                 <div className="inner-row">
                         <div className="footer-content">
-                                     <div className="footer-column"> 
+                                     <div className="footer-column copyright"> 
                                                  <div className="footer-logo">
                                                           <Image src={'/logo-white.png'} sizes="100vw" fill style={{objectFit: 'contain'}} alt="" />
                                                  </div>
-                                                 <p>We&apos;e your one-stop shop for crafting innovative solutions that fuel business growth. From strategy to websites, we leverage cutting-edge tech to make your online presence thrive.</p>
-                                                 <div className="footer-social-links">
+                                                 <p>All rights reserved &copy;{new Date().getFullYear()} Vocanter LLC</p>
+                                                 {/* <p>We&apos;e your one-stop shop for crafting innovative solutions that fuel business growth. From strategy to websites, we leverage cutting-edge tech to make your online presence thrive.</p> */}
+                                                 {/* <div className="footer-social-links">
                                                           <ul>
                                                                      <li><a href=""><span><FaFacebookF /></span></a></li>
                                                                      <li><a href=""><span><FaSquareXTwitter /></span></a></li>
                                                                      <li><a href=""><span><FaLinkedinIn /></span></a></li>
                                                           </ul>
-                                                 </div>
+                                                 </div> */}
                                      </div>
-                                     <div className="footer-column">
+                                     {/* <div className="footer-column">
                                              <h3>Company</h3>
                                                <ul>
                                                           <li><Link to="hero" offset={-100} smooth={true}  spy={true}>Home</Link></li>
@@ -31,13 +32,13 @@ const Footer = () => {
                                                           <li><Link to='case-studies'   smooth={true} spy={true}>Portfolio</Link></li>
                                                           <li><Link to='contact'   smooth={true} spy={true}>Get in Touch</Link></li>
                                                  </ul>
-                                     </div>
+                                     </div> */}
                         </div>
 
-                        <div className="copyright">
+                        {/* <div className="copyright">
                                    <p>All rights reserved &copy;{new Date().getFullYear()} Vocanter LLC</p>
-                                   {/* <a href="">Privacy policy</a> */}
-                        </div>
+                                   <a href="">Privacy policy</a>
+                        </div> */}
                 </div>
     </footer>
   )
