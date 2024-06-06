@@ -14,7 +14,7 @@ export async function POST(req, res) {
         if(google_result.success){
                 const content = {
                       to: "kngugi@vocanter.com",
-                      bcc: ["wamirara@gmail.com", "kngugi@gmail.com"],
+                      bcc: ["mkamuiru@gmail.com", "kngugi@gmail.com"],
                       from: email,
                       subject: `Vocanter Contact Form Message `,
                       text: `
